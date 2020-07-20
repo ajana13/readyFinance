@@ -1,12 +1,40 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <!-- App.vue -->
+
+    <v-app>
+      <v-navigation-drawer app>
+        <!-- -->
+      </v-navigation-drawer>
+      <Navbar />
+      <v-app-bar app>
+        <!-- -->
+      </v-app-bar>
+
+      <!-- Sizes your content based upon application components -->
+      <v-main>
+        <!-- Provides the application the proper gutter -->
+        <v-container fluid>
+          <!-- If using vue-router -->
+          <router-view></router-view>
+        </v-container>
+      </v-main>
+
+      <v-footer app>
+        <!-- -->
+      </v-footer>
+    </v-app>
   </div>
 </template>
+
+<script>
+import Navbar from "./components/Navbar";
+export default {
+  components: {
+    Navbar
+  }
+};
+</script>
 
 <style>
 #app {
