@@ -23,7 +23,7 @@
 export default {
   name: "nav",
   data: () => ({
-    loggedIn: true,
+    loggedIn: false,
   }),
   methods: {
     routeTo(newPath) {
