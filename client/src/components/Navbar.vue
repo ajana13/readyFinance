@@ -23,12 +23,12 @@
 export default {
   name: "nav",
   data: () => ({
-    loggedIn: false
+    loggedIn: true,
   }),
   methods: {
     routeTo(newPath) {
       this.$router.push({ path: newPath });
-    }
-  }
+    },
+  },
 };
 </script>
